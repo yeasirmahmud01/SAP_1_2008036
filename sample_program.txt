@@ -1,0 +1,55 @@
+; ===================================================
+; Program 1: Addition (10 + 5 → result in memory[9])
+; ===================================================
+LDA 7
+LDB 8
+ADD
+ST 9
+HLT
+
+DATA 7 10
+DATA 8 5
+DATA 9 0
+
+
+; ===================================================
+; Program 2: Subtraction (15 - 4 → result in memory[9])
+; ===================================================
+LDA 7
+LDB 8
+SUB
+ST 9
+HLT
+
+DATA 7 15
+DATA 8 4
+DATA 9 0
+
+
+; ===================================================
+; Program 3: Compare (if A > B then Acc=1 else Acc=0)
+; ===================================================
+LDA 7
+LDB 8
+CMP
+ST 9
+HLT
+
+DATA 7 12
+DATA 8 20
+DATA 9 0
+
+
+; ===================================================
+; Program 4: Jump (if Acc=0, jump to address 5)
+; ===================================================
+; NOTE: Demonstrates JMP instruction (execution continues at line 5)
+; This example just halts after the jump
+LDA 7
+JMP 5
+HLT
+HLT
+ST 9
+
+DATA 7 0
+DATA 9 0
